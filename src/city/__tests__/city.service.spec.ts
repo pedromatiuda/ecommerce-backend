@@ -42,7 +42,7 @@ describe('CityService', () => {
   });
 
   it('should return findOne city', async () => {
-    const city = await service.findCityById(state.id);
+    const city = await service.findCityById(cityMock.id);
 
     expect(city).toEqual(cityMock);
   });
