@@ -54,7 +54,7 @@ describe('CityService', () => {
   });
 
   it('should return Cities in getAllCitiesByStateId', async () => {
-    const city = await service.getAllCitiesByStateId(cityMock.stateId);
+    const city = await service.getAllCitiesByStateId(cityMock.id);
 
     expect(city).toEqual([cityMock]);
   });
